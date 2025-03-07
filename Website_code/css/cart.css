@@ -1,0 +1,135 @@
+.cart h2, .cart h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.cart h3 {
+    font-weight: 500;
+}
+.cart-item {
+    padding: 20px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.cart-item div {
+    flex-basis: 20%;
+}
+.cart-item img {
+    width: 5vw;
+    height: auto;
+    margin: 0 15px;
+}
+.cart-item span {
+    letter-spacing: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.cart-item svg {
+    cursor: pointer;
+}
+.back-a svg {
+    margin: -10px 0;
+}
+.back-a:hover {
+    text-decoration: underline;
+}
+
+.summary {
+    float: inline-end;
+    margin: 50px;
+    margin-right: 220px;
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 400px;
+    padding: 40px;
+    position: relative;
+    background-color: #f1eae3;
+}
+.summary span {
+    font-size: 15px;
+    position: absolute;
+    right: 50px;
+}
+.summary h2 {
+    margin: 25px 0;
+}
+.summary .subs-btn {
+    display: block;
+    margin-top: 50px;
+    padding: 10px 30px;
+}
+
+.best-seller {
+    margin-top: 100px;
+}
+.best-seller h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 200%;
+}
+.best-seller h5 {
+    font-size: .9em;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+    padding-left: 10px;
+}
+.best-seller .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding-left: 10px;
+}
+.best-seller img {
+    height: 25vh;
+    width: auto;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.subscribe .row {
+    align-items: start;
+    padding: 50px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 100px;
+}
+.subscribe input {
+    padding: 6px 10px;
+    width: 250px;
+    margin: 0;
+    margin-top: 25px;
+    height: 36px;
+}
+.subscribe p{
+    margin-top: 15px;
+    font-size: 14px;
+    padding-right: 50px;
+}
+.subs-btn {
+    padding: 7px 14px;
+    text-transform: uppercase;
+    background-color: #463232;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all .4s;
+}
+.subs-btn:hover {
+    border: 2px solid #463232;
+    background-color: #e0d0c2;
+    color: #463232;
+}
+.subs-btn:active {
+    scale: .95;
+}
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    background-color: #e0d0c2;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

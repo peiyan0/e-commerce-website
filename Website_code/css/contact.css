@@ -1,0 +1,203 @@
+main .container {
+    margin-top: 0;
+}
+main .row {
+    align-items: start;
+    justify-content: space-between;
+}
+main h1,main h2,main h3,main h4,main h5 {
+    font-weight: 500;
+}
+main h2 {
+    line-height: 40px;
+}
+main h1 {
+    line-height: 60px;
+}
+main h3 {
+    color: #888;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+main h5 {
+    color: #aaa;
+}
+main h4 {
+    font-size: 1em;
+}
+main p {
+    padding: 0 200px 10px 0;
+    line-height: 30px;
+}
+main svg {
+    margin: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+main svg:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 15px 2px rgba(0, 0, 0, 0.2)); 
+}
+img {
+    margin: 20px 30px 20px 0;
+    width: 450px;
+    float: left;
+    aspect-ratio: 1/1;
+    clear: both;
+}
+form {
+    background-color: #EAEAEA;
+    width: 50vw;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+label {
+    float: left;
+    clear: left;
+    display: block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px; 
+}
+main input, main textarea {
+    margin-top: 10px;
+    display: block;
+    border: none;
+    width: 40vw;
+    padding: 5px;
+    background-color: #fff;
+}
+main button {
+    padding: 5px 0;
+    margin: 10px 0;
+    margin-left: 100px; 
+    display: block;
+    border: none;
+    width: 40vw;
+    background-color: #fff;
+    transition: all .3s;
+}
+main button:hover {
+    background-color: #fefefe;
+    scale: 1.1;
+}
+
+main button:active {
+    scale: .95;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    background-color: #e0d0c2;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    header ul {
+        gap: 0;
+    }
+    header ul li a {
+        font-size: 13px;
+    }
+    header .middle-section {
+        left: 55%;
+    }
+    header {
+        max-width: 1024px;
+    }
+    main h4 {
+        font-size: 14px;
+    }
+    main .container {
+        margin-left: 30px;
+    }
+    main p {
+        padding: 0 150px 10px 0;
+        line-height: 30px;
+    }
+    .business {
+        margin-top: 10px;
+    }
+    form {
+        width: 600px;
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+    label {
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 10px; 
+    }
+    input, textarea {
+        margin-top: 10px;
+        display: block;
+        border: none;
+        width: 400px;
+    }
+    input[type="submit"] {
+        margin-left: 100px; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header ul {
+        gap: 0;
+    }
+    header ul li a {
+        font-size: 10px;
+    }
+    header .middle-section {
+        left: 50%;
+        top: 3%;
+    }
+    header {
+        max-width: 1024px;
+    }
+    main h1 {
+        font-size: 24px;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+    img {
+        width: 350px;
+    }
+    main h4 {
+        font-size: 14px;
+    }
+    main .container {
+        margin-left: 30px;
+    }
+    main p {
+        padding: 0 100px 10px 0;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    form {
+        width: 600px;
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+    label {
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 10px; 
+    }
+    input, textarea {
+        margin-top: 10px;
+        display: block;
+        border: none;
+        width: 400px;
+    }
+    input[type="submit"] {
+        margin-left: 100px; 
+    }
+}
+    

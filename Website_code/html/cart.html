@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="import" href="index.html">
+    <!-- CSS FILE-->
+    <link rel="stylesheet" href="../css/index.css"> <!-- INDEX -->
+    <link rel="stylesheet" href="../css/general.css"> <!-- GENERAL -->
+    <link rel="stylesheet" href="../css/cart.css"> <!-- ABOUT -->
+    
+    <!--JS FILE-->
+    <script src="../js/index.js" defer></script> 
+
+    <!-- GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <div class="left-section">
+            <ul>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="middle-section">
+            <a href="index.html">&#8212; Comfort Craft &#8212;</a>
+        </div>
+        <div class="right-section">
+            <ul>
+                <li><a><svg xmlns="http://www.w3.org/2000/svg" onclick="toggleSearchBox()" class="search icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg></a></li>
+                    <div id="searchBox" class="hidden">
+                        <input type="text" placeholder="Search...">
+                        <button onclick="search()">Go</button>
+                    </div>
+                
+                <li><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg></a></li>
+                <li><a href="index.html#account-page"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="cart" id="cart">
+    <div class="summary">
+        <h3>Order Summary</h3>
+        <h2>Subtotal<span>$ 100.00</span></h2><hr>
+        <h2>Shipping <span>$ 5.00</span></h2><hr>
+        <h2>Total<span><strong>$ 105.00</strong></span></h2>
+        <a href="checkout.html"><button class="subs-btn">Checkout</button></a>
+    </div>
+    <div class="container">
+        <a class="back-a" href="products.html"><svg xmlns="http://www.w3.org/2000/svg" class="back icon icon-tabler icon-tabler-chevron-left" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+            Explore More Items
+        </a>
+        <h1>Shopping Cart</h1>
+        <div class="row cart-item">
+            <div><img src="../images/arazo-boucle-chair.jpg" alt=""></div>
+            <div><h2>Arazo Boucle Chair</h2></div>
+            <div><h2><span>-1+</span></h2></div>
+            <div><h2>$50.00</h2></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></div>
+        </div>
+        <div class="row cart-item">
+            <div><img src="../images/boosh-chair.jpg" alt=""></div>
+            <div><h2>Boosh Chair</h2></div>
+            <div><h2><span>-1+</span></h2></div>
+            <div><h2>$50.00</h2></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS YOU MAY LIKE -->
+
+<section class="best-seller">
+    <div class="container">
+        <h1>You may also like</h1>
+        <div class="row">
+            <div class="best-products">
+                <img src="..//images/verona-chair.jpg" alt="">
+                <h5>Verona Chair</h5>
+                <h5>$ 50.00</h5>
+            </div>
+            <div class="best-products">
+                <img src="..//images/nowa-chair.jpg" alt="">
+                <h5>Nowa Chair</h5>
+                <h5>$ 50.00</h5>
+            </div>
+            <div class="best-products">
+                <img src="..//images/wuli-dining-chair.jpg" alt="">
+                <h5>Wuli dining Chair</h5>
+                <h5>$ 50.00</h5>
+            </div>
+            <div class="best-products">
+                <img src="..//images/zig-zag-floor-lamp-1.jpg" alt="">
+                <h5>Zig Zag Floor Lamp </h5>
+                <h5>$ 50.00</h5>
+            </div>          
+        </div>
+    </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1>Subscribe</h1>
+                <p>Sign up to our newsletter and get 15% off!</p>
+            </div>
+            <div class="col-2">
+                <form method="get" onsubmit="return subscribe()">
+                    <input type="email" placeholder="Enter your email" id="subemail" required>
+                    <button class="subs-btn" type="submit">subscribe</button>
+                </form>
+                <p>By submitting, you agree that we may use this 
+                    information to contact you about relevant content. <br><br></p>
+                <div id="subscription-success" class="notification">
+                    Thank you for subscribing! 🎉
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <a href="index.html"><h1>Comfort Craft</h1></a>
+                <p>Discover the art of modern living with Comfort Craft.</p>
+            </div>
+            <div class="col-3">
+                <a href="products.html"><h2>Shop</h2></a>
+                <ul>
+                    <a href="products.html#chair"><li>Chair <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg></li></a>
+                    <a href="products.html#table"><li>Table <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg></li></a>
+                    <a href="products.html#lamp"><li>Lamp <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg></li></a>
+                </ul>
+            </div>
+            <div class="col-3">
+                <a href="contact.html"><h2>Contact Us</h2></a> 
+                <ul>
+                    <li>How Pei Yan</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        22001515@imail.sunway.edu.my</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="dataDetails">
+              <!-- Data details will be dynamically populated here -->
+            </div>
+            <div class="copy">&copy; 2023 Comfort Crafts. All Rights Reserved.</div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

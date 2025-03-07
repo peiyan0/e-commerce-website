@@ -1,0 +1,78 @@
+main .container {
+    margin-top: 0;
+}
+img {
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    float: right;
+    transition: all .5s;
+}
+main img:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+main h1 {
+    line-height: 100px;
+}
+.rev {
+    background-color: #e1d9d1;
+    padding: 30px 60px;
+    border-radius: 20px;
+    height: 350px;
+    position: relative;
+}
+main h3 {
+    position: absolute;
+    bottom: 40px;
+}
+main p {
+    line-height: 30px;
+    text-align: justify;
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    header ul {
+        gap: 0;
+    }
+    header ul li a {
+        font-size: 13px;
+    }
+    header .middle-section {
+        left: 55%;
+    }
+    header {
+        max-width: 1024px;
+    }
+    main h1 {
+        margin-left: 30px;
+    }
+    main p {
+        line-height: 28px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header ul {
+        gap: 0;
+    }
+    header ul li a {
+        font-size: 10px;
+    }
+    header .middle-section {
+        left: 50%;
+        top: 3%;
+    }
+    header {
+        max-width: 1024px;
+    }
+    main h1 {
+        margin-left: 30px;
+    }
+    main p {
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .rev {
+        padding: 20px 40px;
+    }
+}

@@ -1,0 +1,109 @@
+header {
+    height: 60vh;
+    background-position: center;
+}
+main img{
+    aspect-ratio: 1/1;
+}
+.newCol .container {
+    margin-top: 100px;
+}
+.promo {
+    padding-left: 0;
+}
+.promo img {
+    height: 22vh;
+    width: auto;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.promo img:hover, .best-seller img:hover {
+    scale: 1.1;
+}
+.best-seller img {
+    transition: all .3s;
+}
+.offer img {
+    aspect-ratio: 3/4;
+}
+.best-seller h1 {
+    line-height: 2em;
+}
+.best-seller.best .row {
+    padding-left: 760px;
+}
+.best-seller .row {
+    padding-left: 10px;
+}
+.subscribe .row {
+    align-items: start;
+    padding: 50px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 100px;
+}
+.subscribe input {
+    padding: 6px 10px;
+    width: 250px;
+    margin: 0;
+    margin-top: 25px;
+    height: 36px;
+}
+.subscribe p{
+    margin-top: 15px;
+    font-size: 14px;
+    padding-right: 50px;
+}
+.subs-btn {
+    padding: 7px 14px;
+    text-transform: uppercase;
+    background-color: #463232;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all .4s;
+}
+.subs-btn:hover {
+    border: 2px solid #463232;
+    background-color: #e0d0c2;
+    color: #463232;
+}
+.subs-btn:active {
+    scale: .95;
+}
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #e0d0c2;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* LAPTOP */
+    header svg {
+        stroke: #463232;
+    }
+    .best-seller .row {
+        padding-left: 10px;
+    }
+    .best-seller h1 {
+        margin-left: 30px;
+    }
+    .best-seller img {
+        height: 200px;
+    }
+    .best-seller h5 {
+        margin-bottom: 10px;
+    }
+    .best-seller.best .row {
+        padding-left: 470px;
+    }
+    .promo.row {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}

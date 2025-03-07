@@ -1,0 +1,51 @@
+.checkout .row{
+    align-items: start;
+}
+.summary {
+    float: none;
+    width: 500px;
+}
+.cart-item div {
+    flex-basis: 18%;
+}
+form h2 {
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 20px;
+}
+form input {
+    width: 450px;
+    margin: 10px 0;
+}
+.subs-btn {
+    margin: 20px 0;
+    padding: 15px 60px;
+}
+
+
+/* FORM */
+/* CHECKBOX */
+.checkbox label {
+    font-size: 12px;
+}
+.checkbox input {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    width: 16px;
+    height: 20px;
+    border: 0.1em solid #9098A9;
+    margin-bottom: -0.125em;
+}
+.checkbox input[type=checkbox] {
+    border-radius: 0.25em;
+}
+.checkbox input:checked {
+    border-color: transparent;
+    background: #643232 border-box;
+    box-shadow: 0 0 0 0.2em inset #fff;
+}
+.checkbox input:not(:checked):hover {
+    border-color: transparent;
+    background: linear-gradient(#fff, #fff) padding-box, #643232 border-box;
+}
