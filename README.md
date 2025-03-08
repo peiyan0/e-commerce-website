@@ -5,17 +5,10 @@
 - pages included:  **about**, **cart**, **checkout**, **contact**, **index**, **products**, **review**
 
 ### Directories and Files  
-[css/](Website_code/css): 
-- contains the CSS files for styling different pages of the website.  
-
-[html/](Website_code/html): 
-- contains the HTML files for different pages of the website
-
-[images/](Website_code/images): 
-- contains image assets used throughout the website.  
-
-[js/](Website_code/js): 
-- contains JavaScript files for adding interactivity to the website.  
+[css/](Website_code/css): contains the CSS files for styling different pages of the website.  
+[html/](Website_code/html): contains the HTML files for different pages of the website.  
+[images/](Website_code/images): contains image assets used throughout the website.  
+[js/](Website_code/js): contains JavaScript files for adding interactivity to the website.  
 
 ### JavaScript Functions
 The main JavaScript file is located at [`index.js`](Website_code/js/index.js). It includes the following functionalities:
