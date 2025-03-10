@@ -29,5 +29,5 @@ The main JavaScript file is located at [`index.js`](Website_code/js/index.js). I
 https://youtu.be/KN8j7j4vhaI
 
 
-### Website Screenshots
+### Website Screenshot
 ![Alt Text](Website_code/images/index.png)
